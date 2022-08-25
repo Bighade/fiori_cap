@@ -10,12 +10,12 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@sap/ux-specification": "^1.100.4",
+    "@sap/ux-specification": "^1.102.4",
     "sqlite3": "^5.0.2"
   },
   "scripts": {
     "start": "cds run",
-    "watch-riscos": "cds watch --open riscos/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false",
     "watch-mitigation": "cds watch --open mitigation/webapp/index.html?sap-ui-xx-viewCache=false",
     "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false"
   },
@@ -45,8 +45,9 @@
     }
   },
   "sapux": [
-    "app/riscos",
+    "app/risks",
     "app/mitigation",
-    "app/mitigations"
+    "app/mitigations",
+    "app/risks"
   ]
 }

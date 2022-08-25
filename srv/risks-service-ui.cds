@@ -18,7 +18,7 @@ annotate RiskService.Mitigations with {
 	description  @title: 'Descrição';
 	owner        @title: 'Proprietário';
 	timeline     @title: 'Timeline';
-	risks        @title: 'Riscos';
+	risks        @title: 'risks';
 }
 
 annotate RiskService.Risks with @(

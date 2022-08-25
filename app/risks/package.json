@@ -1,7 +1,7 @@
 {
-    "name": "riscos",
+    "name": "risks",
     "version": "0.0.1",
-    "description": "Aplicação Fiori Riscs com CAP",
+    "description": "A Fiori application.",
     "keywords": [
         "ui5",
         "openui5",

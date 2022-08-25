@@ -1,11 +1,11 @@
 {
-    "_version": "1.40.0",
+    "_version": "1.32.0",
     "sap.app": {
-        "id": "nsrisks.riscos",
+        "id": "ns.risks",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
-            "version": "0.0.1"
+            "version": "1.0.0"
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
@@ -55,7 +55,7 @@
     "sap.ui5": {
         "flexEnabled": true,
         "dependencies": {
-            "minUI5Version": "1.102.1",
+            "minUI5Version": "1.95.0",
             "libs": {
                 "sap.m": {},
                 "sap.ui.core": {},
@@ -71,7 +71,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "nsrisks.riscos.i18n.i18n"
+                    "bundleName": "nsrisks.risks.i18n.i18n"
                 }
             },
             "": {
