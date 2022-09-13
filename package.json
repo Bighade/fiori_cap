@@ -7,7 +7,9 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^5",
-    "express": "^4"
+    "express": "^4",
+    "@sap/xssec": "^3",
+    "passport": "^0"
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.102.4",
@@ -49,5 +51,14 @@
     "app/mitigation",
     "app/mitigations",
     "app/risks"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": {
+          "kind": "xsuaa"
+        }
+      }
+    }
+  }
 }
