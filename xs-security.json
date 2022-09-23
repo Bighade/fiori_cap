@@ -1,4 +1,6 @@
 {
+  "xsappname": "cpapp",
+  "tenant-mode": "dedicated",
   "scopes": [
     {
       "name": "$XSAPPNAME.RiskViewer",

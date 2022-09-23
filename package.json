@@ -7,19 +7,23 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^5",
+    "@sap/xssec": "^3.2.13",
     "express": "^4",
-    "@sap/xssec": "^3",
-    "passport": "^0"
+    "make": "^0.8.1",
+    "passport": "^0.5.0",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.102.4",
     "sqlite3": "^5.0.2"
   },
+  "engines": {
+    "node": "^16"
+  },
   "scripts": {
     "start": "cds run",
-    "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-mitigation": "cds watch --open mitigation/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-risks": "cds watch --open risks/webapp/index.html?fe-lrop-v4",
+    "watch-mitigations": "cds watch --open mitigations/webapp/index.html?fe-lrop-v4"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -48,9 +52,7 @@
   },
   "sapux": [
     "app/risks",
-    "app/mitigation",
-    "app/mitigations",
-    "app/risks"
+    "app/mitigations"
   ],
   "cds": {
     "requires": {
