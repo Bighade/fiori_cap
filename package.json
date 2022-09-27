@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "cpapp",
   "version": "1.0.0",
   "description": "A simple CAP project.",
@@ -31,19 +32,29 @@
       "node": true,
       "jest": true,
       "mocha": true
+=======
+    "name": "cpapp",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^5",
+        "@sap/xssec": "^3.2.13",
+        "express": "^4",
+        "make": "^0.8.1",
+        "passport": "^0.5.0",
+        "rimraf": "^3.0.2",
+        "yarn": "^1.22.19"
+>>>>>>> f79dc52a835f97a0d6332dc4ee39a0036e19783f
     },
-    "globals": {
-      "SELECT": true,
-      "INSERT": true,
-      "UPDATE": true,
-      "DELETE": true,
-      "CREATE": true,
-      "DROP": true,
-      "CDL": true,
-      "CQL": true,
-      "CXL": true,
-      "cds": true
+    "devDependencies": {
+        "@sap/ux-specification": "^1.102.4",
+        "sqlite3": "^5.0.2",
+        "rimraf": "^3.0.2"
     },
+<<<<<<< HEAD
     "rules": {
       "no-console": "off",
       "require-atomic-updates": "off"
@@ -58,8 +69,59 @@
       "[production]": {
         "auth": {
           "kind": "xsuaa"
+=======
+    "engines": {
+        "node": "^16"
+    },
+    "scripts": {
+        "start": "cds run",
+        "watch-risks": "cds watch --open risks/webapp/index.html?fe-lrop-v4",
+        "watch-mitigations": "cds watch --open mitigations/webapp/index.html?fe-lrop-v4",
+        "undeploy": "cf undeploy cpapp --delete-services --delete-service-keys --delete-service-brokers",
+        "build": "rimraf resources mta_archives && mbt build --mtar archive",
+        "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    },
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "env": {
+            "es2020": true,
+            "node": true,
+            "jest": true,
+            "mocha": true
+        },
+        "globals": {
+            "SELECT": true,
+            "INSERT": true,
+            "UPDATE": true,
+            "DELETE": true,
+            "CREATE": true,
+            "DROP": true,
+            "CDL": true,
+            "CQL": true,
+            "CXL": true,
+            "cds": true
+        },
+        "rules": {
+            "no-console": "off",
+            "require-atomic-updates": "off"
         }
-      }
+    },
+    "sapux": [
+        "app/risks",
+        "app/mitigations"
+    ],
+    "cds": {
+        "requires": {
+            "[production]": {
+                "auth": {
+                    "kind": "xsuaa"
+                }
+            }
+>>>>>>> f79dc52a835f97a0d6332dc4ee39a0036e19783f
+        }
     }
+<<<<<<< HEAD
   }
+=======
+>>>>>>> f79dc52a835f97a0d6332dc4ee39a0036e19783f
 }
